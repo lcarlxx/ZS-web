@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Corbel; margin:0; font-size: 28px; background: black; color: white;}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: 18cm;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 400px) {
+  .prev, .next,.text,.paragraph {font-size: 11px; margin-top: 50cm;}
+}
+.paragraph {
+  padding-left: 100px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  position: relative;
+  top: 0;
+  display: flex;
+}
+
+li {
+  align-items: center;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 12px 16px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+  color: white;
+}
+
+.active {
+  background-color: white;
+  color: black;
+}
+
+   .box {
+            width: 320px;
+            height: 190px;
+            box-shadow: 5px 15px 30px rgba(46, 46, 46, 0.674);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+  <ul>
+    <li><a href="index.html">HOME</a></li>
+    <li><a class="active" href="Movies.html">FILMOGRAPHY</a></li>
+    <li><a href="Updates.html">UPDATES</a></li>
+  </ul>
+  <h2>FILMOGRAPHY</h2>
+  <div class = "paragragh">
+  <p>Snyder made his feature film debut with the remake of the horror film Dawn of the Dead (2004), and scored a box office hit with the fantasy war film 300 (2006), adapted from writer-artist Frank Miller's Dark Horse Comics miniseries of the same name. His Warner Bros. film Watchmen was released on March 6, 2009, and grossed $185 million worldwide. His follow-up project/animation debut, Legend of the Guardians: The Owls of Ga'Hoole, was released on September 24, 2010. Snyder produced, co-wrote, and directed Sucker Punch, which was released on March 25, 2011.
+    He directed 2013's Man of Steel for Warner Bros., a reboot of the Superman franchise and the jumpstart to the DC Extended Universe (DCEU) and produced the prequel/sequel to 300, 300: Rise of an Empire (2014).
+    During Comic Con 2013, Snyder announced that Batman and Superman would share the screen in Batman v Superman: Dawn of Justice, released in 2016. Snyder directed, Cavill reprised his role as Superman, and Ben Affleck played Batman.
+    On January 29, 2019, Snyder announced that he had signed on to helm Army of the Dead, a zombie heist thriller, for Netflix. Snyder directed and produced the film with his partner and wife, Deborah Snyder, via their newly rebranded production company, The Stone Quarry. His agreement with Netflix has since expanded into several Army of the Dead projects; Army of Thieves, a prequel released in 2021, and Planet of the Dead, a sequel to be created.
+    On May 20, 2020, Snyder announced that Zack Snyder's Justice League would be released on the streaming service HBO Max in 2021.The film was released on March 18, 2021 and was a global success both critically and financially.</p>
+    <p>In July 2021, Snyder was officially announced to be developing the film Rebel Moon for Netflix. It will be inspired by Star Wars and the films of Akira Kurosawa. Filming began in April 2022 and will last until November that year, with the project being developed as a two-part film. Snyder will produce Twilight of the Gods, an anime-style web series inspired by Norse mythology for Netflix. Snyder is also developing a King Arthur film, which he said will be a "faithful retelling". It will be set during the American Gold rush era. Following Rebel Moon, Snyder will return to direct Planet of the Dead, a sequel to Army of the Dead. He also signed a first-look deal with Netflix.</p>
+  </div>
+  <h3>STONE QUARRY PROJECTS (2004-2021)</h3>
+
+ <div class="mySlides fade">
+   <a href="DOTD.html"><img src="dotd.jpg" style="width:100%"></a>
+  <div class="text">Dawn Of The Dead (2004)</div>
+</div>
+
+<div class="mySlides fade">
+  <a href="300.html"><img src="300.jpg" style="width:100%"></a>
+  <div class="text">300 (2006)</div>
+</div>
+
+<div class="mySlides fade">
+  <a href="Watchmen.html"><img src="W.jpg" style="width:100%"></a>
+  <div class="text">Watchmen (2009)</div>
+</div>
+
+<div class="mySlides fade">
+  <a href="LOTG.html"><img src="LOTG.jpg" style="width:100%"></a>
+<div class="text">Legend of The Guardians: Owls of Gahoole (2010)</div>
+</div>
+
+<div class="mySlides fade">
+<a href="SP.html"><img src="SP.jpg" style="width:100%"></a>
+<div class="text">Sucker Punch (2011)</div>
+</div>
+
+<div class="mySlides fade">
+<a href="MOS.html"><img src="MOS.jpg" style="width:100%"></a>
+<div class="text">Man Of Steel (2013)</div>
+</div>
+
+<div class="mySlides fade">
+  <a href="Rise.html"><img src="Rise.jpg" style="width:100%"></a>
+<div class="text">300: Rise Of An Empire (2014)</div>
+</div>
+
+<div class="mySlides fade">
+<a href="BVS.html"><img src="BVS.jpg" style="width:100%"></a>
+<div class="text">Batman V Superman: Dawn Of Justice (2016)</div>
+</div>
+
+<div class="mySlides fade">
+<a href="WW.html"><img src="WW.jpg" style="width:100%"></a>
+<div class="text">Wonder Woman (2017)</div>
+</div>
+
+<div class="mySlides fade">
+<a href="SSI.html"><img src="SSI.jpg" style="width:100%"></a>
+<div class="text">Snow Steam Iron (2017)</div>
+</div>
+
+<div class="mySlides fade">
+  <a href="WW84.html"><img src="WW84.jpg" style="width:100%"></a>
+<div class="text">Wonder Woman 1984 (2020)</div>
+</div>
+
+<div class="mySlides fade">
+<a href="AOTD.html"><img src="AOTD.jpg" style="width:100%"></a>
+<div class="text">Army Of The Dead (2021)</div>
+</div>
+
+<div class="mySlides fade">
+<a href="AOT.html"><img src="AOT.jpg" style="width:100%"></a>
+<div class="text">Army Of Thieves (2021)</div>
+</div>
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+
+<br>
+<br>
+<h3>STONE QUARRY UPCOMING (2023-TBD)</h3>
+<ol>
+  <li><a href="RM.html">REBEL MOON PT1 (2023) & PT2 (2024)</a></li>
+  <li><a href="TOG.html">Twilight Of The Gods (TBD)</a></li>
+  <li><a href="AOTDLV.html">Army Of The Dead: Lost Vegas S1 (TBD)</a></li>
+  <li><a href="POTD.html">Planet Of The Dead (TBD)</a></li>
+<ol>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html> 
